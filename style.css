@@ -29,7 +29,7 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #ffffff;
+    background: #1d3a17;
 }
 
 /* Handle on hover */
@@ -64,6 +64,7 @@ h1 {
 
 .text-gray {
     color: #525252;
+    margin-bottom: 2%;
 }
 
 section {
@@ -103,7 +104,7 @@ section {
 }
 
 .navbar-container {
-    background-color: rgba(46, 71, 45, 0.4);
+    background-color: rgba(0, 0, 0, 0.443);
 
     display: flex;
     justify-content: space-between;
@@ -120,6 +121,8 @@ section {
     text-shadow: 2px 1px #000000, 2px 1px #000000;
 }
 
+
+
 .menu-items {
     display: flex;
     align-items: center;
@@ -130,6 +133,8 @@ section {
     padding: 0 0.5rem;
     border-radius: 20px;
 }
+
+
 
 .menu-items li:hover {
     transform: scale(1.1);
@@ -173,6 +178,7 @@ section {
     align-items: center;
     gap: 2rem;
     padding-top: 3rem;
+    margin-top: 6%;
 }
 
 .home h1 {
@@ -210,10 +216,17 @@ section {
 .menu h1 {
     font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 0%;
 }
 
 .menu ul {
     padding: 2rem 0;
+}
+
+.menu ul li:hover{
+    background-color: #f9ecec;
+            box-shadow: 0 0 10px rgba(245, 79, 79, 0.9);
+    transform: scale(1.1);
 }
 
 .menu ul li {
@@ -278,6 +291,7 @@ section {
 .dessert h1 {
     font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 3%;
 }
 
 .dessert-grid {
@@ -305,6 +319,7 @@ section {
     backdrop-filter: none;
     background-color: white;
     transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 /* book-table-container  */
@@ -333,7 +348,9 @@ section {
 }
 
 .book-table h1 {
+    font-size: 2rem;
     font-weight: 400;
+    margin-bottom: 3%;
 }
 
 /* gallery  */
@@ -385,6 +402,7 @@ section {
 .gallery-item img:hover {
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 100px rgba(145, 235, 42, 0.9);
 }
 
 /* footer  */
@@ -509,12 +527,13 @@ section {
     color: #ff3666;
 }
 
-button {
+button1 {
     padding: 0;
     border: none;
     background-color: transparent;
     -webkit-border-radius: 0;
     border-radius: 0;
+    margin-top: 2%;
 }
 
 .social_profile {
@@ -589,3 +608,49 @@ button {
     font-size: 24px; /* Adjust the font size */
     font-weight: bold; /* Optional: Adjust font weight */
   }
+  .slider-container {
+    max-width: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.slider-container {
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease; /* Add a transition property for smooth sliding */
+}
+
+.slide {
+    flex: 0 0 100%; /* Each slide should take up the full width of the container */
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensure the images are treated as block elements */
+}
